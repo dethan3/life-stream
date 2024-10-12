@@ -1,0 +1,21 @@
+{
+  "name": "Life Stream",
+  "short_name": "LifeStream",
+  "description": "An app to record life events",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/waves_192dp_5F6368.png",
+      "sizes": "192*192",
+      "type": "image/png"
+    },
+    {
+      "src": "/waves_512dp_5F6368.png",
+      "sizes": "512*512",
+      "type": "image/png"
+    }
+  ]
+}
