@@ -1,13 +1,12 @@
 import withPWA from 'next-pwa';
-import createNextIntlPlugin from 'next-intl/plugin';
-import i18nConfig from './i18n.config.js';
 
-const withNextIntl = createNextIntlPlugin(i18nConfig);
+const nextConfig = {
+  reactStrictMode: true,
+};
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {};
-
-export default withPWA({
+const pwaConfig = {
   dest: 'public',
-  disable: process.env.NODE_ENV === 'development',
-})(nextConfig);
+  disable: process.env.NODE_ENV === 'development'
+};
+
+export default withPWA(pwaConfig)(nextConfig);
