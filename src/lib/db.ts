@@ -7,6 +7,7 @@ export interface Event {
   date: Date;
   location?: string;
   notes?: string;
+  category: string;
 }
 
 export class LifeStreamDB extends Dexie {
@@ -15,7 +16,7 @@ export class LifeStreamDB extends Dexie {
   constructor() {
     super('LifeStreamDB');
     this.version(1).stores({
-      events: '++id, type, title, date'
+      events: '++id, type, title, date, category'
     });
   }
 }
